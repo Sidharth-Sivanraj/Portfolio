@@ -1,0 +1,207 @@
+
+html {
+  scroll-snap-type: y proximity;
+}
+
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+  padding-top: 80px;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.nav-link {
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: 0.2s;
+}
+.nav-link:hover {
+  background: #d1d5db;
+}
+.dark .nav-link:hover {
+  background: #374151;
+}
+
+/* Button*/
+.btn {
+  background: rgb(4, 235, 165);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: black;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Social icons as button */
+.social-btn {
+  background: #e5e7eb;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.dark .social-btn {
+  background: #1f2937;
+}
+.social-btn:hover {
+  transform: scale(1.1);
+  background: rgb(4, 235, 165);
+}
+
+/* Icons*/
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Profile image */
+.profile-img {
+  transition: 0.4s;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(4, 235, 165);
+}
+
+/* Certificate card */
+.cert-card {
+  background: #e5e7eb;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.dark .cert-card {
+  background: #1f2937;
+}
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgb(4, 235, 165);
+}
+
+/* Projects card */
+.card {
+  background: #e5e7eb;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  will-change: transform;
+}
+.dark .card {
+  background: #1f2937;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgb(4, 235, 165);
+}
+
+/* Skills bar */
+.skill {
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.skill span {
+  font-size: 14px;
+}
+
+.skill:hover {
+  background: rgba(4, 235, 165, 0.1);
+}
+
+.bar {
+  background: #444;
+  height: 6px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.fill {
+  background: rgb(4, 235, 165);
+  height: 6px;
+  border-radius: 5px;
+  transition: all 0.6s ease;
+}
+
+.skill:hover .fill {
+  box-shadow: 0 0 10px rgb(4, 235, 165);
+}
+
+/* Skills circle */
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+
+  background: conic-gradient(
+    rgb(4, 235, 165) calc(var(--value) * 1%),
+    #444 0%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  background: white;
+  border-radius: 50%;
+}
+
+.dark .circle::before {
+  background: #111827;
+}
+
+.circle span {
+  position: relative;
+  font-weight: bold;
+}
+
+.circle p {
+  position: absolute;
+  bottom: -25px;
+  font-size: 12px;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgb(4, 235, 165);
+}
+
+.circle:hover span {
+  color: rgb(4, 235, 165);
+}
+
+/* F00ter */
+footer {
+  border-top: 1px solid #ccc;
+  scroll-snap-align: none;
+}
+
+.dark footer {
+  border-top: 1px solid #374151;
+}
+
+footer .social-btn:hover {
+  transform: scale(1.1);
+}
+
